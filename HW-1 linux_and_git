@@ -1,0 +1,70 @@
+Linux
+1. mkdir linux_lectur
+   touch notes.txt
+2. cp notes.txt linux_lectur/
+3. ls -l
+4. ls -lar ~
+5. mv notes.txt new_notes.txt
+6. rm notes.txt new_notes.txt 
+   touch homework.sh
+7. touch -t 202001010415.00 homework.sh 
+   touch hw.sh hw1.sh hw2.sh hw1.txt
+8. ls *txt
+9. mkdir lecture_new
+   cp *txt lecture_new/
+10.echo "echo"> homework.sh
+11.cat homework.sh
+12.sudo chmod 277 homework.sh 
+   cat homework.sh 
+   cat: homework.sh: Отказано в доступе
+13.sudo chmod 777 homework.sh
+13a.vi homework.sh 
+14.#Write from 1 to 10 in each line in homework.sh by using text reader#
+15.head -n7 homework.sh 
+16 mcedit notes.sh
+17 sh notes.sh 
+
+GIT
+1.mkdir cursor_git
+2.cd cursor_git/
+3.touch first.py
+4.git add first.py 
+5.git commit -m "adding first.py"
+6.git log
+7.touch second.py
+8.git add second.py 
+9.git commit -m"adding second.py"
+10.rm first.py
+11.git add first.py 
+12.git commit -m"removing first.py
+13.git log
+14.git push
+15.git branch 'first'
+16.git checkout -b 'second'
+17.echo "print('Hello')" > second.py 
+18.git stash
+   git checkout first 
+19.git checkout second
+   git stash pop
+20.git add second.py 
+21.git commit -m "Changing second.py"
+22.git push --set-upstream origin second
+23.git checkout first 
+24.echo "print('Cursor')" > second.py 
+25.git add second.py
+26.git commit -m "Changing second.py"
+27.git push --set-upstream origin first
+28.git checkout master
+29.git merge second
+30.git merge first
+31.git add second.py 
+   git commit -m "resolve conflic for push"
+   git push
+
+
+
+
+
+
+
+
