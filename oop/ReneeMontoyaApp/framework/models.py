@@ -5,13 +5,14 @@ import json
 class Model(ABC):
     file = 'default.json'
 
-    @abstractmethod
     def save(self):
-        pass
+        in_dict_format = self._generate_dict()
+        content = self.get_file_data(self.file)
+        content.append(in_dict_format)
+        self.save_to_file(content)
 
-    @abstractmethod
     def _generate_dict(self):
-        pass
+        return self.__dict__
 
     @classmethod
     def get_by_id(cls, id):
@@ -39,12 +40,3 @@ class Model(ABC):
         file = open('database/' + self.file, "w")
         file.write(data)
         file.close()
-
-    @abstractmethod
-    def save(self):
-        raise NotImplementedError
-
-
-    @abstractmethod
-    def _generate_dict(self):
-        raise NotImplementedError

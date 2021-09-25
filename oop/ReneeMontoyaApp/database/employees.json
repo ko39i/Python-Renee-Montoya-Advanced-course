@@ -1,1 +1,1 @@
-[]
+[{"id": 1, "email": "test@", "name": "Eddi", "department_type": "Plant", "department_id": 4}, {"id": 5, "email": "will@meil.com", "name": "Will", "department_type": "3", "department_id": 7},{"id": 1, "name": "q", "email": "w", "department_type": "e", "department_id": 2}]
